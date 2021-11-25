@@ -5,7 +5,7 @@ plugins {
     id 'maven-publish'
 }
 
-apply from: "$rootDir/../node_modules/react-native/react.gradle"
+//apply from: "$rootDir/../node_modules/react-native/react.gradle"
 //apply plugin: 'maven-publish'
 
 project.ext.react = [
