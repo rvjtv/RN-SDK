@@ -60,16 +60,11 @@ buck-out/
 
 # Bundle artifact
 
-*.bundle.map
-*.jsbundle.map
-!packages/main/ios/Settings.bundle
-
 # CocoaPods
 packages/main/ios/Pods/
 packages/main/ios/Podfile.lock
 
 # Android 
-packages/main/android/app/src/main/assets/index.android.bundle
 
 #Jest
 .jest/

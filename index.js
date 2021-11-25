@@ -1,16 +1,16 @@
 import React from "react";
 import { AppRegistry, StyleSheet, Text, View } from "react-native";
-// import { WebView } from "react-native-webview";
+import { WebView } from "react-native-webview";
 
 class HelloWorld extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.hello}>Yo, Feed !</Text>
-{/*<WebView
+        <WebView
           style={{ height: "100%", width: "100%" }}
           source={{ uri: "http://google.com/" }}
-        />*/}
+        />
       </View>
     );
   }
