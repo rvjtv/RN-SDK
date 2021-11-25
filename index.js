@@ -1,6 +1,6 @@
 import React from "react";
 import { AppRegistry, StyleSheet, Text, View } from "react-native";
-//import { WebView } from "react-native-webview";
+// import { WebView } from "react-native-webview";
 
 class HelloWorld extends React.Component {
   render() {
