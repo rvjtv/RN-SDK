@@ -2,7 +2,11 @@
 plugins {
     id 'com.android.library'
     id 'com.github.dcendents.android-maven'
+    id 'maven-publish'
 }
+
+//apply from: "../../node_modules/react-native/react.gradle"
+//apply plugin: 'maven-publish'
 
 project.ext.react = [
         bundleInDebug   : true,
@@ -50,4 +54,24 @@ dependencies {
     implementation "com.facebook.react:react-native:+" // From node_modules
     implementation project (':react-native-webview')
     implementation "org.webkit:android-jsc:+"
+}
+
+task sourceJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier "source"
+}
+
+publishing {
+    publications {
+        bar(MavenPublication) {
+            groupId 'com.example.myapplication'
+            artifactId 'sampleSDK'
+            version '0.1.30'
+            artifact(sourceJar)
+            artifact("$buildDir/outputs/aar/lib-debug.aar")
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
 }
