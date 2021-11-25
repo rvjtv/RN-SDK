@@ -16,7 +16,7 @@ import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 //import com.reactnativecommunity.webview.RNCWebViewPackage;
-import com.airbnb.android.react.lottie.LottiePackage;
+//import com.airbnb.android.react.lottie.LottiePackage;
 
 import java.util.List;
 
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements DefaultHardwareBa
                 .setJSMainModulePath("index")
                 .addPackage(new MainReactPackage())
                 .addPackage(new MyReactPackage())
-                .addPackage(new LottiePackage())
+//                .addPackage(new LottiePackage())
 //                .addPackage(new RNCWebViewPackage())
                 .setUseDeveloperSupport(BuildConfig.DEBUG)
                 .setInitialLifecycleState(LifecycleState.RESUMED)
