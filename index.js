@@ -1,6 +1,7 @@
 import React from "react";
 import { AppRegistry, StyleSheet, Text, View } from "react-native";
 // import { WebView } from "react-native-webview";
+import LottieView from 'lottie-react-native';
 
 class HelloWorld extends React.Component {
   render() {
@@ -11,6 +12,7 @@ class HelloWorld extends React.Component {
           style={{ height: "100%", width: "100%" }}
           source={{ uri: "http://google.com/" }}
         /> */}
+        <LottieView source={require('./feed-main.json')} autoPlay loop />
       </View>
     );
   }

@@ -7,6 +7,7 @@
     "bundle": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/"
   },
   "dependencies": {
+    "lottie-react-native": "^5.0.1",
     "react": "16.13.1",
     "react-native": "0.63",
     "react-native-webview": "10.10.2"
