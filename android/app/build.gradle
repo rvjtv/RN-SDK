@@ -15,7 +15,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-//        id 'com.example.myapplication'
+//        applicationId 'com.example.myapplication'
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1
@@ -44,6 +44,8 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation "com.facebook.react:react-native:+" // From node_modules
     implementation project (':react-native-webview')
     implementation "org.webkit:android-jsc:+"
